@@ -15,3 +15,7 @@ YouTube removes the `draggable` attribute from its progress bar when an ad start
 ## Stack
 
 Plain JavaScript · Chrome Extension · Manifest V3 · zero permissions
+
+---
+
+Built because I got tired of refreshing YouTube manually.
