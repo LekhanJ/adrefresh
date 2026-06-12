@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YT Ad Reloader</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 280px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f1f1f1;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px;
+      border-bottom: 1px solid #272727;
+    }
+
+    .logo {
+      width: 32px;
+      height: 32px;
+      background: #ff0000;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .title { font-size: 14px; font-weight: 600; }
+    .subtitle { font-size: 11px; color: #aaa; margin-top: 2px; }
+
+    .status-card {
+      margin: 12px;
+      padding: 12px;
+      background: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      padding: 4px 0;
+    }
+
+    .status-label { color: #888; }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 99px;
+    }
+
+    .badge-green { background: #1a3a1a; color: #4caf50; }
+    .badge-gray  { background: #2a2a2a; color: #888; }
+
+    .how-it-works {
+      margin: 0 12px 12px;
+      padding: 10px 12px;
+      background: #111;
+      border-radius: 8px;
+      border: 1px solid #222;
+      font-size: 11px;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .how-it-works strong { color: #ccc; display: block; margin-bottom: 4px; }
+
+    .step { display: flex; gap: 6px; align-items: flex-start; margin-bottom: 3px; }
+
+    .step-num {
+      width: 16px; height: 16px;
+      background: #ff0000;
+      border-radius: 50%;
+      font-size: 9px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      color: white; flex-shrink: 0; margin-top: 1px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 10px;
+      color: #444;
+      padding: 8px;
+      border-top: 1px solid #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">▶</div>
+    <div>
+      <div class="title">AdRefresh</div>
+      <div class="subtitle">Skip ads by reloading</div>
+    </div>
+  </div>
+
+  <div class="status-card">
+    <div class="status-row">
+      <span class="status-label">Extension status</span>
+      <span class="badge badge-green">Active</span>
+    </div>
+    <div class="status-row">
+      <span class="status-label">Applies to</span>
+      <span class="badge badge-gray">youtube.com/watch</span>
+    </div>
+  </div>
+
+  <div class="how-it-works">
+    <strong>How it works</strong>
+    <div class="step"><span class="step-num">1</span><span>Your video timestamp is saved every second while you watch.</span></div>
+    <div class="step"><span class="step-num">2</span><span>When an ad is detected, the page reloads automatically.</span></div>
+    <div class="step"><span class="step-num">3</span><span>After reload, playback resumes exactly where you left off.</span></div>
+    <div class="step"><span class="step-num">4</span><span>Navigating to a new video clears any saved position.</span></div>
+  </div>
+
+  <footer>Works on YouTube · Manifest V3</footer>
+</body>
+</html>
